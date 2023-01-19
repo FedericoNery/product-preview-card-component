@@ -1,0 +1,148 @@
+:root {
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --verydarkblue: hsl(212, 21%, 14%);
+  --darkgrayishblue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.google.com/specimen/Montserrat");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("https://fonts.google.com/specimen/Montserrat");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("https://fonts.google.com/specimen/Fraunces");
+  font-weight: 700;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--cream);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body p {
+  font-size: 14;
+}
+
+@media (max-width: 375px) {
+  .only-desktop {
+    display: none;
+  }
+  .only-mobile {
+    max-width: 375px;
+    width: 100vw;
+  }
+}
+
+@media (min-width: 375px) {
+  .only-mobile {
+    display: none;
+    width: 100vw;
+  }
+  .only-desktop {
+    height: 50vh;
+  }
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.body-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.bg-green {
+  background-color: var(--darkcyan);
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-green {
+  color: var(--darkcyan);
+}
+
+.text-darkgrayishblue {
+  color: var(--darkgrayishblue);
+}
+
+.prices {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.fs-10 {
+  font-size: 2rem;
+}
+
+.fs-3 {
+  font-size: 0.7rem;
+}
+
+.text-spaced {
+  letter-spacing: 0.2rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.without-border {
+  border-style: none;
+}
+
+.mt-0 {
+  margin-top: 0rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.pd-1 {
+  padding: 1rem;
+}
+
+.rounded-top {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+h3 {
+  font-family: "Fraunces";
+  font-weight: 700;
+}
