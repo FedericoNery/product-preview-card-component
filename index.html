@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles.css">
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <title>Frontend Mentor | Product preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -21,19 +21,21 @@
     <img src="./images/image-product-mobile.jpg" alt="Image product Mobile" class="only-mobile rounded-top"/> 
     
     <div class="body-card">
-      <h6 class="text-spaced text-uppercase text-darkgrayishblue mt-0">Perfume</h6>
+      <h6 class="text-spaced text-uppercase text-darkgrayishblue mt-0 mb-05">Perfume</h6>
 
-      <h3 class="mt-0">Gabrielle Essence Eau De Parfum</h3>
+      <h1 class="mt-0 lh">Gabrielle Essence Eau De Parfum</h1>
   
-      <p class="text-darkgrayishblue mt-0">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+      <p class="text-darkgrayishblue mt-0 mb-05">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
       Perfumer-Creator for the House of CHANEL.</p>
   
       <div class="prices">
-        <h3 class="text-green fs-10">$149.99</h3>
-        <del class="text-muted fs-3 ml-1">$169.99</del>
+        <h3 class="text-green fs-10 principal-prize mb-1 mt-05">$149.99</h3>
+        <del class="text-darkgrayishblue fs-3 ml-1 older-prize">$169.99</del>
       </div>
-      <button type="button" class="bg-green rounded text-white without-border pd-1">
-        Add to Cart
+      <button type="button" class="bg-green rounded text-white without-border pd-1 text-align-center">
+        <span class="material-symbols-outlined mr-05">
+          shopping_cart
+          </span>Add to Cart
       </button>
     </div>
     
