@@ -35,16 +35,23 @@ body {
   flex-direction: column;
 }
 
-@media (max-width: 375px) {
+.body-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+@media (max-width: 850px) {
   .only-desktop {
     display: none;
   }
   .only-mobile {
     max-width: 375px;
-    width: 100vw;
+    width: 100%;
   }
   .card {
     flex-direction: column;
+    max-width: 375px;
   }
   
   .rounded-top {
@@ -53,7 +60,7 @@ body {
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 850px) {
   .only-mobile {
     display: none;
     width: 100vw;
@@ -65,28 +72,29 @@ body {
 
   .card {
     flex-direction: row;
+    height: 50vh;
+    max-width: 630px;
   }
 
   .rounded-top {
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
+
+  .body-card{
+    justify-content: space-around;
+    padding: 2rem;
+  }
 }
 
 .card {
   background-color: var(--white);
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
   border-radius: 0.5rem;
   margin: 1rem;
 }
 
-.body-card {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem;
-}
+
 
 .bg-green {
   background-color: var(--darkcyan);
